@@ -4,10 +4,21 @@ export default class Lists {
 
     eventGetList() {
         let result = this.getList();
+
+        result.then((res)=> {
+            if(res.message) {
+                alert(res.message);
+            }
+            else {
+                console.log(res);
+            }
+        }).catch((error)=> {
+            console.log(error)
+        })
     }
 
-    getList() {
-        $.ajax({
+    async getList() {
+        return await $.ajax({
             url: 'http://test-todolist.local/lists',
             type: 'GET',
             success(res) {

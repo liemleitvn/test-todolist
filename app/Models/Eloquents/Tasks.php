@@ -11,7 +11,7 @@ namespace App\Models\Eloquents;
 
 use App\Models\EloquentModelAbstract;
 
-class TasksModel extends EloquentModelAbstract
+class Tasks extends EloquentModelAbstract
 {
     protected $table = 'tasks';
 }

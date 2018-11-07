@@ -8,15 +8,17 @@
 
 namespace App\Repositories;
 
-use App\Repositories\EloquentAbstract;
-use App\Models\Eloquents\TasksModel;
+use App\Models\Eloquents\Tasks;
 
 class TasksRepository extends EloquentAbstract
 {
-    protected $tasks;
+    protected $model;
+    // Lam chi tam bay r
+    // $tasks ni ơ dau r
+    // npó hải trung voi $model ở lớp cha thì lớp cha mới dùng được chứ
 
-    public function __construct(TasksModel $tasks)
+    public function __construct(Tasks $tasks)
     {
-        $this->$tasks = $tasks;
+        $this->model = $tasks;
     }
 }

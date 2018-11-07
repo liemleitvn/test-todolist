@@ -20,6 +20,13 @@ class GetTaskService
     }
 
     public function execute() {
-        return $this->tasksRepo->all('',100);
+        $result =  $this->tasksRepo->all('*',100);
+
+        if(count($result)>0) {
+            return $result;
+        }
+        else {
+            return ['message'=>'Get data fail'];
+        }
     }
 }

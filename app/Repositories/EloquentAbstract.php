@@ -14,8 +14,15 @@ abstract class EloquentAbstract
 	// 	$this->makeModel();
 	// }
 
+    /**
+     * @param array $columns
+     * @param int $limit
+     * @return mixed
+     * Neu phan trang thi khong the dung ham nay, vi no luon luon lay tu 0 -> 10
+     * ok roi do
+     */
 	public function all($columns = array('*'), $limit = 10) {
-		return $this->model->take($limit)->get($columns);
+		return $this->model->take($limit)->select($columns)->get();
 	}
 
 	public function find($id,$columns = array('*')) {
@@ -41,7 +48,6 @@ abstract class EloquentAbstract
 	public function delete($id,$attribute = 'id') {
         return $this->model->where($attribute, '=', $id)->delete();
 	}
-
 }
 
  ?>
