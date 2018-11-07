@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\Repositories\Eloquents;
+namespace App\Repositories;
 
 
 abstract class EloquentAbstract

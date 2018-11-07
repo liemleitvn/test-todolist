@@ -9,7 +9,7 @@
 return [
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'todolist',
+    'database'  => 'calendar',
     'username'  => 'root',
     'password'  => '123456@##Ss1',
     'charset'   => 'utf8',

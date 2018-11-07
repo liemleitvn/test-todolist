@@ -8,15 +8,15 @@
 
 namespace App\Repositories;
 
-use App\Repositories\Eloquents\EloquentAbstract;
-use App\Models\Eloquents\ListModel;
+use App\Repositories\EloquentAbstract;
+use App\Models\Eloquents\TasksModel;
 
 class TasksRepository extends EloquentAbstract
 {
-    protected $listModel;
+    protected $tasks;
 
-    public function __construct(ListModel $listModel)
+    public function __construct(TasksModel $tasks)
     {
-        $this->listModel = $listModel;
+        $this->$tasks = $tasks;
     }
 }

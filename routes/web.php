@@ -9,6 +9,6 @@ $router->route('GET', '/posters', function () {
     echo '<a href="/posters/1">1. Poster</a>';
 });
 
-$router->route('GET', '/', 'App\\Controllers\ListController::index');
-$router->route('GET', '/lists', 'App\\Controllers\ListController::get');
+$router->route('GET', '/', 'App\\Controllers\TaskController::index');
+$router->route('GET', '/lists', 'App\\Controllers\TaskController::get');
 

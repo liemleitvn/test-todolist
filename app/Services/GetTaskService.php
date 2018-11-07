@@ -10,7 +10,7 @@ namespace App\Services;
 
 use App\Repositories\TasksRepository;
 
-class GetListTaskService
+class GetTaskService
 {
     private $tasksRepo;
 

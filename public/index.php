@@ -12,3 +12,5 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $kernel = new \App\Kernel();
 $kernel->load();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
