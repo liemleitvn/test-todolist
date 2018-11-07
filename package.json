@@ -1,0 +1,31 @@
+{
+  "name": "test-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server -d --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liemleitvn/test-todolist.git"
+  },
+  "author": "Liem Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liemleitvn/test-todolist/issues"
+  },
+  "homepage": "https://github.com/liemleitvn/test-todolist#readme",
+  "devDependencies": {
+    "fullcalendar": "^3.9.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "jquery": "^3.3.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
