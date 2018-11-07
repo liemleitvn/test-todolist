@@ -1,30 +1,25 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: liemleitvn
+ * User: phanxicopeter
  * Date: 11/6/18
  * Time: 5:13 PM
  */
 namespace App;
 
 
+use App\Providers\EloquentsProvider;
 use App\Providers\RouteProvider;
-use Jenssegers\Blade\Blade;
 
 class Kernel
 {
-    static $blade;
-
     public function load() {
         try {
-//            $bladeViewsDirectory = __DIR__ . '/../views';
-//            $bladeCacheDirectory = __DIR__ . '/../bootstrap/cache';
-//
-//            static::$blade = new Blade($bladeViewsDirectory, $bladeCacheDirectory);
-//            echo static::$blade->make('welcome', ['name' => 'John Doe']);
-//            die("xxx");
-
             require_once __DIR__ . '/../bootstrap/app.php';
+
+            $eloquent = app(EloquentsProvider::class);
+
+            $eloquent->boot();
 
             $router = app(RouteProvider::class);
 

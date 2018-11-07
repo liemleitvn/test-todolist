@@ -8,15 +8,15 @@
 namespace App\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
-use App\Services\ListWork;
+use App\Services\GetListTaskService;
 
 class ListController extends Controller
 {
-    private $listWork;
+    private $listTaskService;
 
-    public function __construct()
+    public function __construct(GetListTaskService $listTaskService)
     {
-        $this->listWork = app(ListWork::class);
+        $this->listTaskService = $listTaskService;
     }
 
     public function index () {
@@ -25,7 +25,7 @@ class ListController extends Controller
 
     public function get() {
 
-        $lists = $this->listWork->execute();
+        $lists = $this->listTaskService->execute();
 
         echo json_encode($lists);
     }
