@@ -9,13 +9,13 @@
 namespace App\Repositories;
 
 use App\Repositories\Eloquents\EloquentAbstract;
-use App\Services\ListWork;
+use App\Models\Eloquents\ListModel;
 
 class TasksRepository extends EloquentAbstract
 {
     protected $listWork;
 
-    public function __construct(ListWork $listWork)
+    public function __construct(ListModel $listWork)
     {
         $this->listWork = $listWork;
     }

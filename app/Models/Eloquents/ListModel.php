@@ -11,7 +11,7 @@ namespace App\Models\Eloquents;
 
 use App\Models\EloquentModelAbstract;
 
-class ListWork extends EloquentModelAbstract
+class ListModel extends EloquentModelAbstract
 {
     protected $table = 'list';
 }
