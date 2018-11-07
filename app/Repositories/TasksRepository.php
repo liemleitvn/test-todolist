@@ -13,10 +13,10 @@ use App\Models\Eloquents\ListModel;
 
 class TasksRepository extends EloquentAbstract
 {
-    protected $listWork;
+    protected $listModel;
 
-    public function __construct(ListModel $listWork)
+    public function __construct(ListModel $listModel)
     {
-        $this->listWork = $listWork;
+        $this->listModel = $listModel;
     }
 }

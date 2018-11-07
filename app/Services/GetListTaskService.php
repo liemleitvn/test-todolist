@@ -12,14 +12,14 @@ use App\Repositories\TasksRepository;
 
 class GetListTaskService
 {
-    private $tasks;
+    private $tasksRepo;
 
-    public function __construct(TasksRepository $tasks)
+    public function __construct(TasksRepository $tasksRepo)
     {
-        $this->tasks = $tasks;
+        $this->tasksRepo = $tasksRepo;
     }
 
     public function execute() {
-        return $this->tasks->all('',100);
+        return $this->tasksRepo->all('',100);
     }
 }

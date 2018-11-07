@@ -3,12 +3,6 @@
 namespace App\Repositories\Eloquents;
 
 
-use App\Repositories\Constracts\BaseRepositoryInterface;
-// use Illuminate\Container\Container as App;
-// use Illuminate\Database\Eloquent\Model;
- /**
- * 
- */
 abstract class EloquentAbstract
 {
 

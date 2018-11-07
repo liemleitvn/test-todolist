@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59653f3c-0170-4dbd-9f57-cc7fc9e4edb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Eloquents/ListWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Eloquents/ListModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/EloquentModelAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/EloquentModelAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Eloquents/ListModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Eloquents/ListModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EloquentsProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EloquentsProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/TasksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/TasksRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/GetListTaskService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/GetListTaskService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +79,7 @@
           <entry key="htaccess" value="4" />
           <entry key="js" value="5" />
           <entry key="json" value="8" />
-          <entry key="php" value="90" />
+          <entry key="php" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -83,7 +87,7 @@
           <entry key="Blade" value="1" />
           <entry key="JSON" value="8" />
           <entry key="JavaScript" value="5" />
-          <entry key="PHP" value="89" />
+          <entry key="PHP" value="95" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="htaccess" value="4" />
         </counts>
@@ -94,7 +98,7 @@
           <entry key="gitignore" value="28" />
           <entry key="js" value="303" />
           <entry key="json" value="3" />
-          <entry key="php" value="3909" />
+          <entry key="php" value="3963" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -102,7 +106,7 @@
           <entry key="Blade" value="41" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="303" />
-          <entry key="PHP" value="3868" />
+          <entry key="PHP" value="3922" />
           <entry key="PLAIN_TEXT" value="79" />
         </counts>
       </usages-collector>
@@ -115,11 +119,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controllers/ListController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="49" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
                 <element signature="e#120#165#0#PHP" expanded="true" />
@@ -128,23 +132,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Repositories/TasksRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="210">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding>
                 <element signature="e#123#171#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/GetListTaskService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -197,12 +192,15 @@
         <option value="$PROJECT_DIR$/views/show.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/Kernel.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/app/Models/Eloquents/Post.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" />
         <option value="$PROJECT_DIR$/app/Controllers/ListController.php" />
         <option value="$PROJECT_DIR$/app/Services/GetListTaskService.php" />
+        <option value="$PROJECT_DIR$/app/Models/Eloquents/ListModel.php" />
+        <option value="$PROJECT_DIR$/app/Models/EloquentModelAbstract.php" />
+        <option value="$PROJECT_DIR$/app/Providers/EloquentsProvider.php" />
+        <option value="$PROJECT_DIR$/app/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" />
         <option value="$PROJECT_DIR$/app/Repositories/TasksRepository.php" />
       </list>
     </option>
@@ -378,12 +376,12 @@
       <workItem from="1541495466929" duration="8726000" />
       <workItem from="1541509171524" duration="842000" />
       <workItem from="1541512928836" duration="15125000" />
-      <workItem from="1541554876681" duration="11166000" />
+      <workItem from="1541554876681" duration="11514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35859000" />
+    <option name="totallyTimeSpent" value="36207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -566,17 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <element signature="e#112#148#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -619,54 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/EloquentsProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="e#124#175#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/GetListTaskService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/EloquentModelAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Eloquents/ListModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/EloquentAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/TasksRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#123#171#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Dependencies/App.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -686,11 +625,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controllers/ListController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="49" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
             <element signature="e#120#165#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Eloquents/ListModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/EloquentModelAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EloquentsProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#124#175#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/GetListTaskService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <element signature="e#112#148#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/EloquentAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/TasksRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#123#171#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
