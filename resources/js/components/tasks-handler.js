@@ -87,7 +87,7 @@ export default class TasksHandler {
                 });
             }
         }).catch((error)=> {
-            console.log(error)
+            console.log('error: '+error)
         })
     }
 
@@ -117,15 +117,21 @@ export default class TasksHandler {
             status = 2;
         }
 
-        let task = [{
+        let task = {
             id: event.id,
             title: event.title,
             start_date: event.start.format(),
             end_date: end_date,
             status: status,
-        }];
+        };
 
         let result = this.updateTask(task);
+
+        result.then((res)=> {
+            console.log(res)
+        }).catch((err)=> {
+            console.log('error: ' + err)
+        })
 
     }
 

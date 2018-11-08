@@ -8,6 +8,7 @@
 namespace App\Controllers;
 
 use http\Env\Response;
+use function MongoDB\BSON\toJSON;
 use Symfony\Component\HttpFoundation\Request;
 use App\Services\GetTaskService;
 
@@ -35,7 +36,15 @@ class TaskController extends Controller
         ]);
     }
 
+    /**
+     * @param $request
+     */
     public function update($request) {
-        echo json_encode(["ok"=>$request->all()]) ;
+
+        $data = $request['_request']->request->all();
+
+        return json_encode([
+            'data'=>$data
+        ]);
     }
 }

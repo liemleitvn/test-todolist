@@ -151,7 +151,14 @@ class RouteProvider
                 $queryString = $_SERVER['QUERY_STRING'];
                 parse_str($queryString, $query);
 
-                $matcher['_request'] = new Request($query);
+
+                if(json_decode(file_get_contents('php://input')) == null) {
+                    $matcher['_request'] = new Request($query);
+                } else {
+                    $postJson = json_decode(file_get_contents('php://input'), true);
+                    $postData = array_merge($postJson, $_REQUEST);
+                    $matcher['_request'] = new Request($query, $postData);
+                }
 
                 foreach ($matcher as $key => $value) {
                     if (strpos($value, "?") !== false) {

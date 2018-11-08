@@ -35,6 +35,7 @@ export default class Request {
             Object.assign({method: 'POST'}, opts, {headers})
         );
 
+
         const data = await response.json();
 
         console.log(data);
@@ -43,6 +44,7 @@ export default class Request {
             console.log(data.error);
             return {};
         }
+
 
         return data;
     }
