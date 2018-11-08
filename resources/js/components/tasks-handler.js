@@ -6,6 +6,7 @@ import Request from './Request'
 
 export default class TasksHandler {
     constructor() {
+        this.eventDrop = this.eventDrop.bind(this);
     }
 
     /**
@@ -152,10 +153,11 @@ export default class TasksHandler {
 
     }
 
-    async updateTask(data = {}) {
+    async updateTask(data) {
+
         let url = 'http://test-todolist.local/tasks/update';
         let opts = {
-            body: data
+            body: JSON.stringify(data)
         };
 
         return await Request.send(url,opts);

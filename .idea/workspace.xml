@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59653f3c-0170-4dbd-9f57-cc7fc9e4edb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/tasks-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/GetTaskService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/GetTaskService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/lists.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Request.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/tasks-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/tasks-handler.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,9 +99,9 @@
         <counts>
           <entry key="dummy" value="70" />
           <entry key="gitignore" value="54" />
-          <entry key="js" value="3613" />
+          <entry key="js" value="3776" />
           <entry key="json" value="11" />
-          <entry key="php" value="5194" />
+          <entry key="php" value="5269" />
           <entry key="scss" value="112" />
         </counts>
       </usages-collector>
@@ -121,8 +109,8 @@
         <counts>
           <entry key="Blade" value="41" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="3613" />
-          <entry key="PHP" value="5153" />
+          <entry key="JavaScript" value="3776" />
+          <entry key="PHP" value="5228" />
           <entry key="PLAIN_TEXT" value="124" />
           <entry key="SCSS" value="112" />
         </counts>
@@ -136,14 +124,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+            <state relative-caret-position="483">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
-                <element signature="e#120#165#0#PHP" expanded="true" />
+                <element signature="e#120#142#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/tasks-handler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="303">
+              <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -185,29 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/Request.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="56" />
+            <state relative-caret-position="288">
+              <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -275,11 +245,11 @@
         <option value="$PROJECT_DIR$/resources/js/components/lists.js" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Request.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/tasks-handler.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/resources/js/components/tasks-handler.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/Request.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/TaskController.php" />
       </list>
     </option>
   </component>
@@ -445,12 +415,12 @@
       <workItem from="1541512928836" duration="15125000" />
       <workItem from="1541554876681" duration="18768000" />
       <workItem from="1541582078567" duration="29090000" />
-      <workItem from="1541643224532" duration="535000" />
+      <workItem from="1541643224532" duration="2735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73086000" />
+    <option name="totallyTimeSpent" value="75286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -544,6 +514,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="166" column="42" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="42" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#119#185#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,17 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/TaskController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <element signature="e#120#165#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/TasksRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -701,34 +664,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="273">
+          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Request.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="56" />
+        <state relative-caret-position="288">
+          <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/tasks-handler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="303">
+          <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/Controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="483">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#120#142#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

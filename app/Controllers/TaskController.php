@@ -7,6 +7,7 @@
  */
 namespace App\Controllers;
 
+use http\Env\Response;
 use Symfony\Component\HttpFoundation\Request;
 use App\Services\GetTaskService;
 
@@ -35,6 +36,6 @@ class TaskController extends Controller
     }
 
     public function update($request) {
-        var_dump($request);
+        echo json_encode(["ok"=>$request->all()]) ;
     }
 }
