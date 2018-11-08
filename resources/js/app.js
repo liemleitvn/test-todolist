@@ -1,5 +1,6 @@
 
-import Lists from './components/lists'
+import TasksHandler from './components/tasks-handler'
+import '../scss/main.scss'
 
-let list = new Lists();
-list.eventGetList();
+let task = new TasksHandler();
+task.eventTask();

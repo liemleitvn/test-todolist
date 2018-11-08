@@ -20,6 +20,7 @@ class TaskController extends Controller
     }
 
     public function index () {
+
         require_once ROOT_PATH.'/views/show.php';
     }
 
@@ -27,6 +28,13 @@ class TaskController extends Controller
 
         $tasks = $this->taskService->execute();
 
-        echo json_encode($tasks->toArray());
+        echo json_encode([
+            'data' => $tasks,
+            'message' => ''
+        ]);
+    }
+
+    public function update($request) {
+        var_dump($request);
     }
 }

@@ -10,5 +10,6 @@ $router->route('GET', '/posters', function () {
 });
 
 $router->route('GET', '/', 'App\\Controllers\TaskController::index');
-$router->route('GET', '/lists', 'App\\Controllers\TaskController::get');
+$router->route('GET', '/tasks', 'App\\Controllers\TaskController::get');
+$router->route('POST', '/tasks/update', 'App\\Controllers\TaskController::update');
 
