@@ -30,21 +30,19 @@ export default class Request {
             'Content-Type': 'application/json'
         });
 
+        // console.log(urlApi,Object.assign({method: 'POST'}, opts, {headers}));
+
         let response = await fetch(
             urlApi,
             Object.assign({method: 'POST'}, opts, {headers})
         );
 
-
         const data = await response.json();
-
-        console.log(data);
 
         if(data.error) {
             console.log(data.error);
             return {};
         }
-
 
         return data;
     }

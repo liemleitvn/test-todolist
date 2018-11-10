@@ -25,3 +25,17 @@ function view($name, $params = []) {
 
 //$apiHelper = app('App\Helpers\Api');
 //$apiHelper = app()->make('App\Helpers\Api')
+
+if (! function_exists('response')) {
+    /**
+     * @param string $content
+     * @param int $status
+     * @param array $headers
+     * @return \App\Dependencies\App|mixed|object
+     * @throws \App\Dependencies\Exception
+     */
+    function response()
+    {
+        return app(\App\Providers\ResponseProvider::class);
+    }
+}

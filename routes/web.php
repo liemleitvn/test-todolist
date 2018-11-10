@@ -12,4 +12,6 @@ $router->route('GET', '/posters', function () {
 $router->route('GET', '/', 'App\\Controllers\TaskController::index');
 $router->route('GET', '/tasks', 'App\\Controllers\TaskController::get');
 $router->route('POST', '/tasks/update', 'App\\Controllers\TaskController::update');
+$router->route('POST', '/tasks/create', 'App\\Controllers\TaskController::store');
+$router->route('GET', '/tasks/delete/{id}','App\\Controllers\TaskController::destroy');
 

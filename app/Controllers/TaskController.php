@@ -10,41 +10,81 @@ namespace App\Controllers;
 use http\Env\Response;
 use function MongoDB\BSON\toJSON;
 use Symfony\Component\HttpFoundation\Request;
-use App\Services\GetTaskService;
+use App\Services\ServiceFactory;
 
 class TaskController extends Controller
 {
-    private $taskService;
-
-    public function __construct(GetTaskService $taskService)
+    public function __construct()
     {
-        $this->taskService = $taskService;
     }
 
+    /**
+     * Author: Liem Le <liemleitvn@gmail.com>
+     * @return mixed
+     * @throws \App\Dependencies\Exception
+     */
     public function index () {
 
-        require_once ROOT_PATH.'/views/show.php';
+        return response()->view('show');
     }
 
+    /**
+     * @author Liem Le <liemleitvn@gmail.com>
+     * @return mixed
+     * @throws \App\Dependencies\Exception
+     */
     public function get() {
 
-        $tasks = $this->taskService->execute();
+        $tasks = ServiceFactory::create('get_task')->execute();
 
-        echo json_encode([
+        return response()->json([
             'data' => $tasks,
             'message' => ''
         ]);
     }
 
     /**
+     * Author: Liem Le <liemleitvn@gmail.com>
      * @param $request
+     * @return mixed
+     * @throws \App\Dependencies\Exception
+     */
+    public function store($request) {
+
+        $data = $request['_request']->request->all();
+
+        $result = ServiceFactory::create('create_task')->execute($data);
+
+        return response()->json(['data' => $result, 'message' => '']);
+    }
+
+    /**
+     * Author: Liem Le <liemleitvn@gmail.com>
+     * @param $request
+     * @return mixed
+     * @throws \App\Dependencies\Exception
      */
     public function update($request) {
 
         $data = $request['_request']->request->all();
 
-        return json_encode([
-            'data'=>$data
-        ]);
+        $result = ServiceFactory::create('update_task')->execute($data);
+
+        return response()->json(['data' => $result, 'message' => '']);
+    }
+
+    /**
+     * Author: Liem Le <liemleitvn@gmail.com>
+     * @param $request
+     * @return mixed
+     * @throws \App\Dependencies\Exception
+     */
+    public function destroy($request) {
+
+        $id = $request['id'];
+
+        $result = ServiceFactory::create('delete_task')->execute($id);
+
+        return response()->json(['data' => $result, 'message' => '']);
     }
 }

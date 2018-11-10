@@ -3,23 +3,18 @@
 namespace App\Repositories;
 
 
+use Carbon\Carbon;
+
 abstract class EloquentAbstract
 {
 
 	protected $model;
-	
-	// function __construct(App $app)
-	// {
-	// 	$this->app = $app; 
-	// 	$this->makeModel();
-	// }
+
 
     /**
      * @param array $columns
      * @param int $limit
      * @return mixed
-     * Neu phan trang thi khong the dung ham nay, vi no luon luon lay tu 0 -> 10
-     * ok roi do
      */
 	public function all($columns = array('*'), $limit = 10) {
 		return $this->model->take($limit)->select($columns)->get();

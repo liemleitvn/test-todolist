@@ -13,5 +13,18 @@ use App\Models\EloquentModelAbstract;
 
 class Tasks extends EloquentModelAbstract
 {
+    /**
+     * @var string
+     */
     protected $table = 'tasks';
+
+    /**
+     * @var string
+     */
+    protected $primaryKey = 'id';
+
+    /**
+     * @var array
+     */
+    public $fillable = ['name', 'start_date', 'end_date', 'status'];
 }

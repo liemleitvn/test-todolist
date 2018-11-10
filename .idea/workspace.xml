@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59653f3c-0170-4dbd-9f57-cc7fc9e4edb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/ResponseProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/CreateTaskService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DeleteTaskService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/ServiceFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/ServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/UpdateTaskService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/utils/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/utils/toast.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Eloquents/Tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Eloquents/Tasks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/TasksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/TasksRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Request.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/tasks-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/tasks-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/show.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,61 +81,71 @@
     <session id="1852732694">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="htaccess" value="4" />
-          <entry key="js" value="22" />
-          <entry key="json" value="15" />
-          <entry key="php" value="124" />
-          <entry key="scss" value="3" />
+          <entry key="js" value="29" />
+          <entry key="json" value="17" />
+          <entry key="php" value="178" />
+          <entry key="scss" value="5" />
+          <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Blade" value="1" />
           <entry key="CSS" value="2" />
-          <entry key="JSON" value="15" />
-          <entry key="JavaScript" value="22" />
-          <entry key="PHP" value="123" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SCSS" value="3" />
+          <entry key="JSON" value="17" />
+          <entry key="JavaScript" value="29" />
+          <entry key="PHP" value="177" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SCSS" value="5" />
+          <entry key="TypeScript" value="1" />
           <entry key="htaccess" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="70" />
+          <entry key="dummy" value="86" />
           <entry key="gitignore" value="54" />
-          <entry key="js" value="3931" />
+          <entry key="js" value="9889" />
           <entry key="json" value="11" />
-          <entry key="php" value="5796" />
-          <entry key="scss" value="112" />
+          <entry key="php" value="8561" />
+          <entry key="scss" value="156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="41" />
+          <entry key="HTML" value="48" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="3931" />
-          <entry key="PHP" value="5755" />
-          <entry key="PLAIN_TEXT" value="124" />
-          <entry key="SCSS" value="112" />
+          <entry key="JavaScript" value="9841" />
+          <entry key="PHP" value="8520" />
+          <entry key="PLAIN_TEXT" value="140" />
+          <entry key="SCSS" value="156" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="7" />
+          <entry key="PHP Class.type" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -130,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state relative-caret-position="1155">
+              <caret line="85" column="70" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
                 <element signature="e#120#142#0#PHP" expanded="true" />
@@ -140,33 +165,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/RouteProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-                <element signature="e#119#185#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/tasks-handler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+            <state relative-caret-position="121">
+              <caret line="383" column="39" lean-forward="true" selection-start-line="383" selection-start-column="39" selection-end-line="383" selection-end-column="39" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -175,10 +178,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Request.js">
+        <entry file="file://$PROJECT_DIR$/views/show.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -200,7 +203,20 @@
       <find>);console.log(&quot;this is lists.js&quot;</find>
       <find>ExtractTextPlugin</find>
       <find>new Request</find>
+      <find>setTask</find>
+      <find>getStatusChange</find>
+      <find>moment</find>
+      <find>setAttribute</find>
+      <find>CREATED_AT</find>
+      <find>date</find>
+      <find>datetime-local</find>
+      <find>L5_FMT</find>
+      <find>format</find>
+      <find>datetime</find>
     </findStrings>
+    <replaceStrings>
+      <replace>getStatus</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -208,16 +224,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/Connection.php" />
-        <option value="$PROJECT_DIR$/app/models/Database.php" />
-        <option value="$PROJECT_DIR$/app/services/TodoList.php" />
-        <option value="$PROJECT_DIR$/app/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/app/Dependencies/Exception.php" />
-        <option value="$PROJECT_DIR$/app/Dependencies/App.php" />
-        <option value="$PROJECT_DIR$/vendor/jenssegers/blade/src/Blade.php" />
-        <option value="$PROJECT_DIR$/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Controllers/PostController.php" />
-        <option value="$PROJECT_DIR$/bootstrap/app.php" />
         <option value="$PROJECT_DIR$/views/welcome.php" />
         <option value="$PROJECT_DIR$/app/Models/Connection.php" />
         <option value="$PROJECT_DIR$/app/Models/Database.php" />
@@ -235,23 +242,38 @@
         <option value="$PROJECT_DIR$/app/Models/Eloquents/ListModel.php" />
         <option value="$PROJECT_DIR$/app/Models/Eloquents/TasksModel.php" />
         <option value="$PROJECT_DIR$/app/Controllers/ListController.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/TasksRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/resources/main.scss" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/resources/scss/main.scss" />
         <option value="$PROJECT_DIR$/app/Services/GetTaskService.php" />
-        <option value="$PROJECT_DIR$/views/show.php" />
         <option value="$PROJECT_DIR$/resources/js/components/lists.js" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/test.php" />
-        <option value="$PROJECT_DIR$/app/Providers/RouteProvider.php" />
-        <option value="$PROJECT_DIR$/app/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Request.js" />
+        <option value="$PROJECT_DIR$/app/Providers/ViewProvider.php" />
+        <option value="$PROJECT_DIR$/bootstrap/app.php" />
+        <option value="$PROJECT_DIR$/app/Providers/ResponseProvider.php" />
+        <option value="$PROJECT_DIR$/app/Services/UpdateTaskService.php" />
+        <option value="$PROJECT_DIR$/resources/js/control/toast-control.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/resources/js/control/toast.js" />
+        <option value="$PROJECT_DIR$/resources/scss/main.scss" />
+        <option value="$PROJECT_DIR$/resources/js/control/modal.js" />
+        <option value="$PROJECT_DIR$/resources/js/utils/modal.js" />
+        <option value="$PROJECT_DIR$/app/Services/ServiceFactory.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Services/DeleteTaskService.php" />
+        <option value="$PROJECT_DIR$/app/Services/ServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RouteProvider.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/TasksRepository.php" />
+        <option value="$PROJECT_DIR$/app/Services/CreateTaskService.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/EloquentAbstract.php" />
+        <option value="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Model.php" />
+        <option value="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Concerns/HasAttributes.php" />
+        <option value="$PROJECT_DIR$/app/Models/Eloquents/Tasks.php" />
+        <option value="$PROJECT_DIR$/views/show.php" />
+        <option value="$PROJECT_DIR$/app/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/resources/js/components/tasks-handler.js" />
       </list>
     </option>
@@ -289,7 +311,7 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/database" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-254" />
     <option name="y" value="402" />
     <option name="width" value="1161" />
@@ -317,7 +339,43 @@
               <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
               <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Eloquents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
@@ -336,6 +394,12 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test-todolist" type="b2602c69:ProjectViewProjectNode" />
@@ -359,6 +423,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -402,22 +467,27 @@
       <workItem from="1541554876681" duration="18768000" />
       <workItem from="1541582078567" duration="29090000" />
       <workItem from="1541643224532" duration="4210000" />
-      <workItem from="1541647864213" duration="7432000" />
+      <workItem from="1541647864213" duration="42044000" />
+      <workItem from="1541728846187" duration="31000" />
+      <workItem from="1541746378611" duration="349000" />
+      <workItem from="1541751844409" duration="25383000" />
+      <workItem from="1541811825885" duration="578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84193000" />
+    <option name="totallyTimeSpent" value="145146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27613726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2952913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -441,25 +511,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/npm-debug.log" />
-    <entry file="file://$PROJECT_DIR$/app/services/TodoList.php" />
-    <entry file="file://$PROJECT_DIR$/app/models/Connection.php" />
-    <entry file="file://$PROJECT_DIR$/app/models/Database.php" />
-    <entry file="file://$PROJECT_DIR$/app/Controllers/test.php" />
-    <entry file="file://$PROJECT_DIR$/app/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Dependencies/Exception.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -489,13 +540,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jenssegers/blade/src/Blade.php" />
-    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Connection.php" />
     <entry file="file://$PROJECT_DIR$/app/Services/ListWork.php" />
     <entry file="file://$PROJECT_DIR$/public/.htaccess">
@@ -514,17 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <element signature="e#112#148#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -532,31 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/EloquentModelAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Eloquents/Tasks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/EloquentsProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/EloquentAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -570,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -585,72 +590,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/bundle.js" />
-    <entry file="file://$PROJECT_DIR$/resources/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/show.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/GetTaskService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/TasksRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,21 +604,188 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/toastr/toastr.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/utils/toast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/utils/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/ServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/DeleteTaskService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#1#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/RouteProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <element signature="e#119#185#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1620">
+          <caret line="120" column="7" lean-forward="true" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/UpdateTaskService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/ServiceFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/ResponseProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/TasksRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Concerns/HasAttributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="609" column="5" lean-forward="true" selection-start-line="609" selection-start-column="5" selection-end-line="609" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Eloquents/Tasks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/EloquentModelAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/CreateTaskService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/EloquentAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="1155">
+          <caret line="85" column="70" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
             <element signature="e#120#142#0#PHP" expanded="true" />
@@ -683,17 +793,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Request.js">
+    <entry file="file://$PROJECT_DIR$/views/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="423" lean-forward="true" selection-start-line="423" selection-end-line="423" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/tasks-handler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+        <state relative-caret-position="121">
+          <caret line="383" column="39" lean-forward="true" selection-start-line="383" selection-start-column="39" selection-end-line="383" selection-end-column="39" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
