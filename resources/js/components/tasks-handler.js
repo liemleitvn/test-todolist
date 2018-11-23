@@ -182,6 +182,7 @@ export default class TasksHandler {
     }
 
     /**
+     * event click on task
      * Author: Liem Le <liemleitvn@gmail.com>
      * @param event
      * @param jsEvent
@@ -247,7 +248,7 @@ export default class TasksHandler {
                         if(res.data) {
                             modal.hide();
                             alert(`Task ${task.name} is deleted.`);
-                            window.location.href = "http://test-todolist.local/";
+                            $('#calendar').fullCalendar('refetchEvents',sources);
                         }
                     }).catch((error)=> {
                         console.log(error);
@@ -399,7 +400,6 @@ export default class TasksHandler {
             } );
             modal.hide()
         });
-
     }
 
     /**
@@ -408,7 +408,7 @@ export default class TasksHandler {
      * @returns {Promise<any>}
      */
     async deleteTask(id) {
-        let url =`http://test-todolist.local/tasks/delete/${id}`
+        let url =`http://test-todolist.local/tasks/delete/${id}`;
         return await Request.get(url);
 
     }
